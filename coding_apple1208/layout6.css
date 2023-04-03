@@ -1,0 +1,93 @@
+.space {
+  /* background: pink; */
+  height: 50px;
+  width: 100%;
+}
+
+
+
+.plus {
+  background: white;
+  border: none;
+}
+.plus:hover {
+  animation-name: 플러스;
+  animation-duration: 1.5s;
+}
+
+@keyframes 플러스{
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: scale(2) rotate(45deg);
+  }
+}
+
+
+
+
+
+.blue-button {
+  background: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.blue-button:hover {
+  animation-name: 흔들버튼;
+  animation-duration: 0.5s;
+}
+@keyframes 흔들버튼{
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+
+
+@keyframes slide{
+  0% {
+    transform: translateX(-250px)
+  }
+  50% {
+    transform: translateX(-20px) skewX(-30deg)
+  }
+  100% {
+    transform: translateX(0px)
+  }
+}
+
+.ani-navbar:hover p {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+.ani-navbar {
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transition: all 1s;
+  transform: translateX(-150px);
+}
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}

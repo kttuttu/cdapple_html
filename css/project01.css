@@ -1,0 +1,9 @@
+@font-face {
+  font-family: '주아체';
+  src: url(../font/BMJUA_ttf.ttf);
+}
+body {
+  margin: 0px;
+  font-family: '주아체';
+  text-align: center;
+}

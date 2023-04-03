@@ -1,0 +1,24 @@
+.header {
+    background : url('../boombayah.jpg');
+    height: 2000px;}
+
+h2 {
+    color: white;
+    font-size: 5em;
+    width: 400px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    animation: slide 10s;
+}
+@keyframes slide{
+    from {
+        top: -100px;
+        opacity: 1;
+    }
+    to {
+        bottom: 1000px;
+        opacity: 0;
+    }
+}
